@@ -21,10 +21,7 @@ export default function SectionTwo() {
 
 			{/* Image Section */}
 			<div className=" lg:w-[50%] w-full rounded-2xl ">
-				<YouTubeThumbnail
-					videoId="qemqQHaeCYo"
-					height="438px"
-				/>
+				<YouTubeThumbnail videoId="qemqQHaeCYo" />
 			</div>
 		</div>
 	);

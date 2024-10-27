@@ -11,6 +11,7 @@ import youtube from '../assets/icons/youtube-icon-footer.svg';
 import instagram from '../assets/icons/instagram-icon-footer.svg';
 import twitter from '../assets/icons/twitter-icon-footer.svg';
 import facebook from '../assets/icons/facebook-icon-footer.svg';
+import WhatsAppButton from './whatsapp';
 
 function Hamburger({ setIsOpen }) {
 	const [animation, setAnimation] = useState('');
@@ -89,6 +90,7 @@ function Hamburger({ setIsOpen }) {
 							<img
 								src={logo}
 								alt=""
+								onClick={() => handleNavigation('/', 'home')}
 							/>
 							<button
 								className="rounded-md text-[#3a5791]"
@@ -235,8 +237,8 @@ function Hamburger({ setIsOpen }) {
 							</div>
 						</div>
 						<a>
-							<button className="rounded-md text-center cursor-pointer  text-[#000000] bg-[#FF9500] w-full py-[12px] text-[16px] font-medium flex justify-center items-center mt-[24px]">
-								Book Now
+							<button className="rounded-md text-center cursor-pointer  text-[#000000] bg-[#FF9500] w-full p-1 h-[45px]   text-[16px] font-medium flex justify-center items-center mt-[24px]">
+								<WhatsAppButton />
 							</button>
 						</a>
 					</div>

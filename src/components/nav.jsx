@@ -12,6 +12,7 @@ import twitter from '../assets/icons/twitter-icon-header.svg';
 import facebook from '../assets/icons/facebook-icon-header.svg';
 
 import Hamburger from './hamburger.jsx';
+import WhatsAppButton from './whatsapp.jsx';
 
 export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -218,7 +219,7 @@ export default function Nav() {
 								src={logo}
 								alt="Logo"
 								className=" w-[72px] h-[57px] "
-								onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+								onClick={() => scrollToSection('home')}
 							/>
 						</a>
 					</div>
@@ -274,8 +275,8 @@ export default function Nav() {
 						</RouterLink>
 					</div>
 					<a href="#">
-						<button className="rounded-md cursor-pointer bg-[#FF9500] px-[16px] py-[8px] text-[14px] text-[#000000] lg:flex items-center hidden">
-							Book Now
+						<button className="rounded-md cursor-pointer bg-[#FF9500] p-1 h-[34px] w-[95px]  text-[14px] text-[#000000] lg:flex items-center hidden">
+							<WhatsAppButton />
 						</button>
 					</a>
 				</div>

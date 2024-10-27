@@ -10,6 +10,7 @@ import youtube from '../assets/icons/youtube-icon-footer.svg';
 import instagram from '../assets/icons/instagram-icon-footer.svg';
 import twitter from '../assets/icons/twitter-icon-footer.svg';
 import facebook from '../assets/icons/facebook-icon-footer.svg';
+import WhatsAppButton from './whatsapp';
 
 export default function Footer() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -156,8 +157,8 @@ export default function Footer() {
 						</div>
 					</div>
 					<a className="cursor-pointer lg:mt-[0px] mt-[16px]  relative">
-						<button className="rounded-md cursor-pointer bg-[#FF9500] px-[16px] py-[8px] text-[14px] text-[#000000] flex items-center ">
-							Book Now
+						<button className="rounded-md cursor-pointer bg-[#FF9500] p-1 h-[34px] w-[95px] text-[14px] text-[#000000] flex items-center ">
+							<WhatsAppButton />
 						</button>
 					</a>
 				</div>
