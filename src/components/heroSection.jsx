@@ -26,7 +26,7 @@ export default function HeroSection() {
 									className="rounded-md hover:cursor-pointer text-[#FF9500] border-[#FF9500] border-[1px] px-[30px] py-[12px] text-[16px] font-bold"
 									href="tel:08037472400"
 								>
-									Call us for Booking
+									Call us for Bookings
 								</a>
 							</div>
 						</div>
