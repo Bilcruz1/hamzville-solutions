@@ -109,7 +109,7 @@ export default function ContactUs() {
 									scrolling="no"
 									marginHeight="0"
 									marginWidth="0"
-									src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3942.0757551296792!2d7.2503269999999995!3d8.87254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTInMjEuMSJOIDfCsDE1JzAxLjIiRQ!5e0!3m2!1sen!2sng!4v1732801266716!5m2!1sen!2sng"
+									src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3942.0757551296792!2d7.2503269999999995!3d8.87254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTInMjEuMSJOIDfCsDE1JzAxLjIiRQ!5e0!3m2!1sen!2sng!4v1732801266716!5m2!1sen!2sng&z=21"
 									allowFullScreen
 								></iframe>
 							</div>
