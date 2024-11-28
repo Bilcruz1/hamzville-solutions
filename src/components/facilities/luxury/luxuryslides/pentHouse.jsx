@@ -5,17 +5,16 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 // Your images here
-import img1 from '../../../../assets/slides/luxuryslides/delux/slide1.png';
-import img2 from '../../../../assets/slides/luxuryslides/delux/slide2.png';
-import img3 from '../../../../assets/slides/luxuryslides/delux/slide3.png';
-import img4 from '../../../../assets/slides/luxuryslides/delux/slide4.png';
-import img5 from '../../../../assets/slides/luxuryslides/delux/slide5.png';
+import img1 from '../../../../assets/slides/luxuryslides/delux/slide3.jpg';
+import img2 from '../../../../assets/slides/luxuryslides/delux/slide4.jpg';
+import img3 from '../../../../assets/slides/luxuryslides/delux/slide5.jpg';
+import img4 from '../../../../assets/slides/luxuryslides/delux/slide6.jpg';
 
 import arrowNext from '../../../../assets/icons/arrowNext.svg';
 import arrowBack from '../../../../assets/icons/arrowBack.svg';
 
 export default function PentHouse({ currentSlide, setCurrentSlide }) {
-	const images = [img1, img2, img3, img4, img5];
+	const images = [img1, img2, img3, img4];
 
 	const handleSlideChange = swiper => {
 		setCurrentSlide(swiper.realIndex + 1); // Correctly update the current slide number
