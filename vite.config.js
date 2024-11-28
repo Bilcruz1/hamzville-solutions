@@ -1,3 +1,15 @@
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+	server: {
+		port: 5173, // Default port
+		strictPort: false, // Allows Vite to use the next available port if 5173 is taken
+	},
+	build: {
+		chunkSizeWarningLimit: 1000, // Set the chunk size warning limit to 1 MB
+	},
+});
+
 // import { defineConfig } from 'vite'
 // import react from '@vitejs/plugin-react'
 
@@ -6,8 +18,8 @@
 //   plugins: [react()],
 // })
 
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+// import { defineConfig } from 'vite';
+// import react from '@vitejs/plugin-react';
 
 // export default defineConfig({
 // 	plugins: [react()],
@@ -18,9 +30,9 @@ import react from '@vitejs/plugin-react';
 // 		open: true, // Automatically open in browser on desktop (optional)
 // 	},
 // });
-export default {
-	server: {
-		port: 5173, // Default port
-		strictPort: false, // Allows Vite to use the next available port if 5173 is taken
-	},
-};
+// export default {
+// 	server: {
+// 		port: 5173, // Default port
+// 		strictPort: false, // Allows Vite to use the next available port if 5173 is taken
+// 	},
+// };
