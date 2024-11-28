@@ -5,9 +5,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-			},
-			fontFamily: {
-				outfit: ['Outfit', 'sans-serif'],
+				outfit: ['Outfit', 'sans-serif'], // Combined into a single `fontFamily` key
 			},
 			keyframes: {
 				fadeSlideDown: {
@@ -25,5 +23,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/aspect-ratio')], // Added the plugin here
 };
