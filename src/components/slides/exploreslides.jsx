@@ -5,7 +5,7 @@ import 'swiper/css'; // Core Swiper styles
 import 'swiper/css/navigation'; // Navigation module styles
 
 // Your images here
-import img1 from '../../assets/slides/exploreslides/slide.jpg';
+import img1 from '/slide.jpg';
 import img2 from '../../assets/slides/exploreslides/Slide1.jpg';
 import img3 from '../../assets/slides/exploreslides/Slide2.jpg';
 import img4 from '../../assets/slides/exploreslides/Slide3.jpg';
