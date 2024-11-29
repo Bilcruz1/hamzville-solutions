@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 // Your images here
-import img1 from '../../../../assets/slides/luxuryslides/delux/slide3.jpg';
+import img1 from '../../../../assets/slides/luxuryslides/delux/Slide3.jpg';
 import img2 from '../../../../assets/slides/luxuryslides/delux/slide4.jpg';
 import img3 from '../../../../assets/slides/luxuryslides/delux/slide5.jpg';
 import img4 from '../../../../assets/slides/luxuryslides/delux/slide6.jpg';
