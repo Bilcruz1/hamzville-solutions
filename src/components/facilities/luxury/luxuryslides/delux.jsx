@@ -6,9 +6,9 @@ import 'swiper/css/navigation';
 
 // Your images here
 import img1 from '../../../../assets/slides/luxuryslides/delux/Slide3.jpg';
-import img2 from '../../../../assets/slides/luxuryslides/delux/slide4.jpg';
-import img3 from '../../../../assets/slides/luxuryslides/delux/slide5.jpg';
-import img4 from '../../../../assets/slides/luxuryslides/delux/slide6.jpg';
+import img2 from '../../../../assets/slides/luxuryslides/delux/Slide4.jpg';
+import img3 from '../../../../assets/slides/luxuryslides/delux/Slide5.jpg';
+import img4 from '../../../../assets/slides/luxuryslides/delux/Slide6.jpg';
 
 import arrowNext from '../../../../assets/icons/arrowNext.svg';
 import arrowBack from '../../../../assets/icons/arrowBack.svg';
