@@ -188,7 +188,7 @@ function Hamburger({ setIsOpen }) {
 						</div>
 						<div className="flex gap-[16px] mt-[24px]">
 							<div className="flex items-center">
-								<a href="#">
+								<a href="https://www.youtube.com/@BryanaResort">
 									<img
 										src={youtube}
 										alt="mail-icon-header"
@@ -200,7 +200,7 @@ function Hamburger({ setIsOpen }) {
 								</a>
 							</div>
 							<div className="flex items-center">
-								<a href="#">
+								<a href="https://www.instagram.com/bryanaresort_apartment/">
 									<img
 										src={instagram}
 										alt="mail-icon-header"
@@ -212,7 +212,7 @@ function Hamburger({ setIsOpen }) {
 								</a>
 							</div>
 							<div className="flex  items-center">
-								<a href="#">
+								<a href="https://x.com/bryanaresort">
 									<img
 										src={twitter}
 										alt="mail-icon-header"
@@ -224,7 +224,7 @@ function Hamburger({ setIsOpen }) {
 								</a>
 							</div>
 							<div className="flex items-center">
-								<a href="#">
+								<a href="https://www.facebook.com/people/Bryana-Resort-Apartment/61567517363921/?mibextid=LQQJ4d">
 									<img
 										src={facebook}
 										alt="mail-icon-header"

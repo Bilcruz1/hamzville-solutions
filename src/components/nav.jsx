@@ -10,9 +10,11 @@ import youtube from '../assets/icons/youtube-icon-header.svg';
 import instagram from '../assets/icons/instagram-icon-header.svg';
 import twitter from '../assets/icons/twitter-icon-header.svg';
 import facebook from '../assets/icons/facebook-icon-header.svg';
+import whatsapp from '../assets/icons/whatsapp-icon-header.svg';
 
 import Hamburger from './hamburger.jsx';
 import WhatsAppButton from './whatsapp.jsx';
+import WhatsAppButtonNav from './whatsapp2.jsx';
 
 export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -116,8 +118,8 @@ export default function Nav() {
 			{isOpen && <Hamburger setIsOpen={setIsOpen} />}
 
 			<div className="fixed z-40 top-0 font-outfit bg-[#ffffff]  border-b-[0.5px] border-[#eaecf0] w-screen">
-				<div className="bg-[#FFEACC]  lg:flex justify-between gap-2 hidden lg:px-[120px] px-[16px] py-[16px]">
-					<div className="flex justify-between gap-[16px] text-[14px] font-light">
+				<div className="bg-[#FFEACC]  flex justify-between gap-2  lg:px-[120px] px-[16px] py-[16px]">
+					<div className="lg:flex hidden justify-between gap-[16px] text-[14px] font-light">
 						<div className="flex gap-[8px] items-center">
 							<a href="#">
 								<img
@@ -161,9 +163,12 @@ export default function Nav() {
 							<p>bryanaresort@gmail.com</p>
 						</div>
 					</div>
-					<div className="flex gap-[16px]">
+					<div className="flex lg:mx-0  mx-auto gap-[16px]">
+						<div className="lg:hidden flex items-center">
+							<WhatsAppButtonNav />
+						</div>
 						<div className="flex items-center">
-							<a href="#">
+							<a href="https://www.youtube.com/@BryanaResort">
 								<img
 									src={youtube}
 									alt="mail-icon-header"
@@ -175,7 +180,7 @@ export default function Nav() {
 							</a>
 						</div>
 						<div className="flex items-center">
-							<a href="#">
+							<a href="https://www.instagram.com/bryanaresort_apartment">
 								<img
 									src={instagram}
 									alt="mail-icon-header"
@@ -187,7 +192,7 @@ export default function Nav() {
 							</a>
 						</div>
 						<div className="flex  items-center">
-							<a href="#">
+							<a href="https://x.com/bryanaresort">
 								<img
 									src={twitter}
 									alt="mail-icon-header"
@@ -199,7 +204,7 @@ export default function Nav() {
 							</a>
 						</div>
 						<div className="flex items-center">
-							<a href="#">
+							<a href="https://www.facebook.com/people/Bryana-Resort-Apartment/61567517363921/?mibextid=LQQJ4d">
 								<img
 									src={facebook}
 									alt="mail-icon-header"
