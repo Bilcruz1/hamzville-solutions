@@ -1,0 +1,139 @@
+{
+	"noddles": [
+		{ "id": 1, "name": "Noodles + Fried egg/Boiled egg", "price": 3000 },
+		{ "id": 2, "name": "Noodles + Chicken/Beef/G. Meat", "price": 6000 },
+		{ "id": 3, "name": "Noodles + Fried egg/Boiled egg", "price": 6500 },
+		{ "id": 4, "name": "Noodles + Chicken/Beef/G. Meat", "price": 8000 }
+	],
+
+	"fries": [
+		{ "id": 1, "name": "Fried yam/Boiled yam+egg sauce", "price": 6000 },
+		{
+			"id": 2,
+			"name": "Bolognese Spaghetti + Beef/Chicken/Goat Meat",
+			"price": 6500
+		}
+	],
+	"rice": [
+		{
+			"id": 1,
+			"name": "Plain rice & Banga+Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{ "id": 2, "name": "Plain rice & stew+Beef/Chicken/G.meat", "price": 7000 },
+		{ "id": 3, "name": "Fried Rice + Beef/Chicken/G.meat", "price": 7000 },
+		{ "id": 4, "name": "Jollof Rice + Beef/Chicken/G.meat", "price": 7000 },
+		{ "id": 5, "name": "Coconut rice + Beef/Chicken/G.meat", "price": 7000 },
+		{ "id": 6, "name": "Native rice + Beef/Chicken/G.meat", "price": 7000 },
+		{
+			"id": 7,
+			"name": "Chinese rice+Beef/Chicken/G.meat/prawns/Crabs",
+			"price": 12000
+		}
+	],
+
+	"Soups+Swallows+Proteins": [
+		{
+			"id": 1,
+			"name": "Afang + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{
+			"id": 2,
+			"name": "Vegetable + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{
+			"id": 3,
+			"name": "Bitter leaf + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{
+			"id": 4,
+			"name": "Oha + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{
+			"id": 5,
+			"name": "White soup + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{
+			"id": 6,
+			"name": "Okro + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{
+			"id": 7,
+			"name": "Egusi + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{
+			"id": 8,
+			"name": "Ogbono + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{
+			"id": 9,
+			"name": "Banga soup + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		},
+		{
+			"id": 10,
+			"name": "Native soup + semo/wheat/poundo/Eba + Beef/Chicken/G.meat",
+			"price": 8000
+		}
+	],
+
+	"small Bites": [
+		{ "id": 1, "name": "Peppered garnish beef", "price": 3000 },
+		{ "id": 2, "name": "Peppered garnish chicken", "price": 3000 },
+		{ "id": 3, "name": "Peppered garnish turkey", "price": 4500 },
+		{ "id": 4, "name": "Peppered garnish fish", "price": 4000 },
+		{ "id": 5, "name": "Peppered garnish goat meat", "price": 3000 }
+	],
+	"sea Foods": [
+		{ "id": 1, "name": "Sea food okro", "price": 8000 },
+		{ "id": 2, "name": "Fisherman soup", "price": 8000 }
+	],
+	"pepper Soups": [
+		{ "id": 1, "name": "Cat fish pepper soup", "price": 15000 },
+		{ "id": 2, "name": "Portion cat fish pepper soup", "price": 5000 },
+		{ "id": 3, "name": "Croacker fish pepper soup", "price": 18000 },
+		{ "id": 4, "name": "Portion croacker fish pepper soup", "price": 7000 },
+		{ "id": 5, "name": "Turkey pepper soup", "price": 6000 },
+		{ "id": 6, "name": "Chicken pepper soup", "price": 4500 },
+		{ "id": 7, "name": "Goat meat pepper soup", "price": 4500 },
+		{ "id": 8, "name": "Beef pepper soup", "price": 4500 },
+		{ "id": 9, "name": "Cow leg pepper soup", "price": 6000 },
+		{ "id": 10, "name": "Cow head pepper soup", "price": 6000 }
+	],
+	"barbeques": [
+		{ "id": 1, "name": "Cat fish bbq", "price": 15000 },
+		{ "id": 2, "name": "Croacker fish bbq", "price": 18000 }
+	],
+	"native Delicacies": [
+		{ "id": 1, "name": "Isi ewi", "price": 8000 },
+		{ "id": 2, "name": "Nkwobi", "price": 4000 }
+	],
+	"extras": [
+		{ "id": 1, "name": "Extras egusi soup", "price": 2500 },
+		{ "id": 2, "name": "Extra swallow", "price": 2000 },
+		{ "id": 3, "name": "Extra vegetable", "price": 2500 },
+		{ "id": 4, "name": "Extra ogbono", "price": 2500 },
+		{ "id": 5, "name": "Extra plain rice", "price": 2000 },
+		{ "id": 6, "name": "Extra Jollof rice", "price": 3000 },
+		{ "id": 7, "name": "Extra fried rice", "price": 3000 },
+		{ "id": 8, "name": "Extra beef/G.meat/chicken", "price": 3300 }
+	],
+	"drinks": [
+		{ "id": 1, "name": "Coca Cola", "price": 500 },
+		{ "id": 2, "name": "Pepsi", "price": 500 },
+		{ "id": 3, "name": "Sprite", "price": 500 },
+		{ "id": 4, "name": "Fanta", "price": 500 },
+		{ "id": 5, "name": "Water (Bottle)", "price": 300 },
+		{ "id": 6, "name": "Fruit Juice", "price": 1500 },
+		{ "id": 7, "name": "Beer (Small)", "price": 1000 },
+		{ "id": 8, "name": "Beer (Large)", "price": 1500 }
+	]
+}
