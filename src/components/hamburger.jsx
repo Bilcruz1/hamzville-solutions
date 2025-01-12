@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { HiX } from 'react-icons/hi';
 import { Link as RouterLink, useNavigate, useLocation } from 'react-router-dom';
-import logo from '../assets/icons/bryana-logo-nav.svg';
-import close from '../assets/icons/menu-close-icon.svg';
+// import logo from '../../assets/icons/hamzville-logo.svg';
+import logo from '../assets/images/hamzville-logo.svg';
+import close from '../assets/icons/menu-close-iconn.svg';
 import { Link as ScrollLink, scroller } from 'react-scroll';
-import locations from '../assets/icons/location-nav-icon.svg';
-import phone from '../assets/icons/phone-nav-icon.svg';
-import mail from '../assets/icons/mail-nav-icon.svg';
-import youtube from '../assets/icons/youtube-icon-footer.svg';
-import instagram from '../assets/icons/instagram-icon-footer.svg';
-import twitter from '../assets/icons/twitter-icon-footer.svg';
-import facebook from '../assets/icons/facebook-icon-footer.svg';
+import locations from '../assets/icons/location-ham-icon.svg';
+import phone from '../assets/icons/phone-ham-icon.svg';
+import mail from '../assets/icons/mail-ham-icon.svg';
+import youtube from '../assets/icons/youtube-icon-ham.svg';
+import instagram from '../assets/icons/instagram-icon-ham.svg';
+import twitter from '../assets/icons/twitter-icon-ham.svg';
+import facebook from '../assets/icons/facebook-icon-ham.svg';
 import WhatsAppButton from './whatsapp';
 
 function Hamburger({ setIsOpen }) {
@@ -70,8 +71,9 @@ function Hamburger({ setIsOpen }) {
 
 	// Function to apply active styles
 	const getLinkStyles = path => ({
-		color: location.pathname === path ? '#FF9500' : '#ffff',
+		color: location.pathname === path ? '#FFFFFF' : '#00050F',
 		fontWeight: location.pathname === path ? 'bold' : 'normal',
+		backgroundColor: location.pathname === path ? '#265205' : '#ffff',
 	});
 
 	return (
@@ -84,8 +86,8 @@ function Hamburger({ setIsOpen }) {
 				className="relative w-full pt-[24px] text-center"
 				style={getSlideStyles()}
 			>
-				<div className="bg-[#00050F] lg:w-full w-[95%] h-screen absolute top-0 left-0 font-medium flex flex-col justify-between px-[20px] pb-[24px]">
-					<div className="flex flex-col gap-[32px]">
+				<div className="bg-[#ffffff] lg:w-full w-[95%] h-screen absolute top-0 left-0 font-medium flex flex-col justify-between px-[20px] pb-[24px]">
+					<div className="flex flex-col">
 						<div className="flex justify-between pt-[24px]">
 							<img
 								src={logo}
@@ -111,31 +113,42 @@ function Hamburger({ setIsOpen }) {
 							offset={-70}
 							onClick={() => handleNavigation('/', 'home')}
 							style={getLinkStyles('/')}
-							className="text-[24px] text-left cursor-pointer mt-[0px]"
+							className="text-[24px] px-[16px] py-[16px] rounded-lg text-left cursor-pointer mt-[40px]"
 						>
 							Home
 						</ScrollLink>
+						<ScrollLink
+							to="about"
+							duration={500}
+							smooth={true}
+							offset={-70}
+							onClick={() => handleNavigation('/', about)}
+							style={getLinkStyles('/about')}
+							className="text-[24px] px-[16px] py-[16px] rounded-lg text-left cursor-pointer mt-[0px]"
+						>
+							About Us
+						</ScrollLink>
 
 						<RouterLink
-							to="/facilities"
-							style={getLinkStyles('/facilities')}
-							className="text-[24px] text-left cursor-pointer"
-							onClick={() => handleNavigation('/facilities')}
+							to="/services"
+							style={getLinkStyles('/services')}
+							className="text-[24px] px-[16px] py-[16px] rounded-lg text-left cursor-pointer"
+							onClick={() => handleNavigation('/services')}
 						>
-							Our Facilities
+							Our Services
 						</RouterLink>
 
 						<RouterLink
 							to="/contact-us"
 							style={getLinkStyles('/contact-us')}
-							className="text-[24px] text-left cursor-pointer"
+							className="text-[24px] px-[16px] py-[16px] rounded-lg text-left cursor-pointer"
 							onClick={() => handleNavigation('/contact-us')}
 						>
 							Contact us
 						</RouterLink>
 					</div>
 
-					<div className=" text-[#ffff] pt-[16px]">
+					<div className=" text-[#00050F] pt-[16px]">
 						<div className="flex flex-col gap-[16px] text-[16px] font-light">
 							<div className="flex gap-[20px] items-center">
 								<a href="#">
@@ -188,7 +201,7 @@ function Hamburger({ setIsOpen }) {
 						</div>
 						<div className="flex gap-[16px] mt-[24px]">
 							<div className="flex items-center">
-								<a href="https://www.youtube.com/@BryanaResort">
+								<a href="#">
 									<img
 										src={youtube}
 										alt="mail-icon-header"
@@ -200,7 +213,7 @@ function Hamburger({ setIsOpen }) {
 								</a>
 							</div>
 							<div className="flex items-center">
-								<a href="https://www.instagram.com/bryanaresort_apartment/">
+								<a href="#">
 									<img
 										src={instagram}
 										alt="mail-icon-header"
@@ -212,7 +225,7 @@ function Hamburger({ setIsOpen }) {
 								</a>
 							</div>
 							<div className="flex  items-center">
-								<a href="https://x.com/bryanaresort">
+								<a href="#">
 									<img
 										src={twitter}
 										alt="mail-icon-header"
@@ -224,7 +237,7 @@ function Hamburger({ setIsOpen }) {
 								</a>
 							</div>
 							<div className="flex items-center">
-								<a href="https://www.facebook.com/people/Bryana-Resort-Apartment/61567517363921/?mibextid=LQQJ4d">
+								<a href="#">
 									<img
 										src={facebook}
 										alt="mail-icon-header"
@@ -237,7 +250,7 @@ function Hamburger({ setIsOpen }) {
 							</div>
 						</div>
 						<a>
-							<button className="rounded-md text-center cursor-pointer  text-[#000000] bg-[#FF9500] w-full p-1 h-[45px]   text-[16px] font-medium flex justify-center items-center mt-[24px]">
+							<button className="rounded-md text-center cursor-pointer  text-[#ffff] bg-[#265205] w-full p-1 h-[45px]   text-[16px] font-medium flex justify-center items-center mt-[24px]">
 								<WhatsAppButton />
 							</button>
 						</a>

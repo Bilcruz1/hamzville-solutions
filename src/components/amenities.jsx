@@ -1,97 +1,131 @@
-import React from 'react';
-import logo from '../assets/icons/bryana-logo-header.svg';
-import luxury from '../assets/icons/luxury-icon.svg';
-import swimmingPool from '../assets/icons/swimmingPool-icon.svg';
-import restaurant from '../assets/icons/restaurant-icon.svg';
-import internet from '../assets/icons/internet-icon.svg';
-import conference from '../assets/icons/conferenceHall-icon.svg';
-import laundry from '../assets/icons/laundary-icon.svg';
-import airport from '../assets/icons/airport-icon.svg';
+import React, { useState } from 'react';
 
 export default function Amenities() {
 	// Array to store data for each amenity
 	const amenities = [
 		{
-			icon: luxury,
-			title: 'Luxury Apartments',
+			title: 'Residential Cleaning',
 			description:
-				'Our elegantly furnished apartments provide luxury, spaciousness, and modern comfort perfect for short-term stays or extended visits.',
+				'Our Residential Cleaning service delivers a spotless and refreshed home using eco-friendly products. Enjoy a healthier, more comfortable living space with our professional care.',
 		},
 		{
-			icon: swimmingPool,
-			title: 'Swimming Pool',
+			title: 'Office Cleaning',
 			description:
-				'Take a refreshing dip in our beautiful swimming pool, the perfect place to unwind after a busy day or weekend.',
+				'Our Office Cleaning service ensures a clean, hygienic, and productive workspace. We focus on every detail to create a professional and welcoming environment.',
 		},
 		{
-			icon: restaurant,
-			title: 'Restaurant & Bar',
+			title: 'Post-Construction Cleaning',
 			description:
-				'Savor delicious meals and refreshing drinks at our restaurant and bar, offering a variety of local and international cuisines for everyone.',
+				'Our Post-Construction Cleaning service clears dust, debris, and residues, leaving your space spotless and move-in ready. We handle the mess so you can enjoy the results.',
 		},
 		{
-			icon: internet,
-			title: '24/7 Internet & Power',
+			title: 'Rodent Control',
 			description:
-				'Enjoy high-speed internet and uninterrupted power throughout our property, ensuring a seamless experience for you, day and night.',
+				'Our Rodent Control service effectively eliminates rats, mice, and more, protecting your property from damage and contamination. We use safe, efficient methods to keep your space rodent-free.',
 		},
 		{
-			icon: conference,
-			title: 'Conference Hall',
+			title: 'Termite Solutions',
 			description:
-				'Our modern conference hall features state-of-the-art facilities, making it the perfect venue for business meetings, seminars, and corporate events.',
+				'Our Termite Solutions safeguard your property by eliminating termites and preventing future infestations. Protect your structures with our reliable and eco-friendly treatments.',
 		},
 		{
-			icon: laundry,
-			title: 'Laundry Services',
+			title: 'General Pest Management',
 			description:
-				'Enjoy the convenience of our professional laundry services, ensuring your clothes are fresh and ready whenever you need them.',
+				'Our General Pest Management service tackles common pests like cockroaches, ants, spiders, and more. We ensure a safe, pest-free environment with effective and eco-friendly solutions.',
 		},
 		{
-			icon: airport,
-			title: 'Free Airport Shuttle',
+			title: 'Solar Panel Installation',
 			description:
-				'Enjoy the convenience of our complimentary airport shuttle service, exclusively for guests staying at the hotel, making your arrival and departure stress-free.',
+				'Harness the power of the sun with our high-quality solar energy systems. We design and install solutions tailored to your energy needs, reducing your reliance on traditional power sources and lowering utility bills.',
 		},
 		{
-			icon: airport,
-			title: 'Ticketing Services',
+			title: 'Energy Audits and Optimization',
 			description:
-				'Our team is available to assist with flight ticketing and travel arrangements, ensuring a seamless experience during your stay.',
+				'Identify areas of energy waste with our comprehensive audits. Our team provides actionable recommendations to improve efficiency, helping you save money while minimizing environmental impact.',
+		},
+		{
+			title: 'Energy-Efficient Systems Upgrade',
+			description:
+				'Transition to sustainable living with energy-efficient lighting, appliances, and HVAC systems. Our upgrades not only reduce energy consumption but also enhance the performance and longevity of your systems.',
 		},
 	];
 
+	// State to manage the active index for mobile view
+	const [activeIndex, setActiveIndex] = useState(0);
+
+	// Function to toggle active index on mobile
+	const handleToggle = index => {
+		setActiveIndex(prevIndex => (prevIndex === index ? -1 : index));
+	};
+
 	return (
 		<div>
-			<h6 className="text-center text-[#FF9500] font-light text-[20px] leading-[36px] lg:pt-[13px] pt-[40px]">
-				Our Exclusive Amenities
+			<h6 className="text-center text-[#265205] font-semibold text-[20px] leading-[36px] lg:pt-[13px] pt-[40px]">
+				Our Professional Services
 			</h6>
-			<p className="text-center font-semibold  text-[#292929] lg:text-[36px] text-[20px] lg:px-[356px] px-[16px] pt-[8px]">
-				At Bryana Resort & Apartment, we offer a variety of premium features
-				designed to enhance your stay
+			<p className="text-center font-semibold text-[#292929] lg:text-[36px] text-[32px] lg:px-[356px] px-[24px] pt-[8px]">
+				Keep your environment spotless and refreshed, free from pests and dirt.
 			</p>
-			<div className="grid lg:grid-cols-4 grid-cols-1 gap-[48px] lg:px-[120px] px-[16px] pt-[48px]">
+
+			{/* Large Screen Layout */}
+			<div className="hidden lg:grid lg:grid-cols-3 gap-[48px] lg:px-[120px] px-[16px] pt-[48px]">
 				{amenities.map((amenity, index) => (
 					<div
 						key={index}
-						className="hover:border-[#FDDF9D] hover:shadow-inner  hover:bg-[#FFFBF0] border-[1px] border-[#D1D1D6] px-[16px] pt-[16px] lg:pb-[42px] pb-[16px] rounded-2xl"
+						className="border-2 border-[#D1D1D6] px-[16px] pt-[16px] lg:pb-[42px] pb-[16px] rounded-2xl hover:border-[#265205] hover:shadow-inner hover:bg-[#FFFCD0]"
 					>
-						<div>
-							<img
-								src={amenity.icon}
-								alt={amenity.title}
-								className="w-[72px] h-[57px]"
-								onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-							/>
-						</div>
-						<h1 className="text-[20px] text-[#1B1F26] pt-[12px] leading-[30px] font-semibold">
+						<h1 className="text-[24px] text-[#1B1F26] text-center pt-[12px] leading-[30px] font-semibold">
 							{amenity.title}
 						</h1>
-						<p className="text-[#292929] text-[16px] pt-[12px] leading-[26px] font-light">
+						<p className="text-[#292929] text-center text-[16px] pt-[16px] leading-[26px] font-light">
 							{amenity.description}
 						</p>
 					</div>
 				))}
+			</div>
+			<div className="lg:flex hidden justify-center  space-x-[32px]  mt-[48px] mb-[80px]  ">
+				<a
+					className="rounded-md hover:cursor-pointer bg-[#265205] text-[#ffffff] px-[16px] py-[12px] text-[16px] font-semibold"
+					href="tel:09034079339"
+				>
+					Book an Appointment
+				</a>
+			</div>
+
+			{/* Mobile Layout */}
+			<div className="lg:hidden px-[24px] pt-[48px]">
+				{amenities.map((amenity, index) => (
+					<div
+						key={index}
+						className={`border-[0.1px] ${
+							activeIndex === index
+								? 'border-[#265205] bg-[#FFFCD0]'
+								: 'border-[#f0f0f0]'
+						} px-[24px] py-[16px] `}
+					>
+						{/* Title with toggle functionality */}
+						<h1
+							className="text-[24px] text-[#1B1F26] leading-[30px] font-semibold cursor-pointer"
+							onClick={() => handleToggle(index)}
+						>
+							{amenity.title}
+						</h1>
+						{/* Description only for active item */}
+						{activeIndex === index && (
+							<p className="text-[#292929] text-[16px] pt-[16px] leading-[26px] font-light">
+								{amenity.description}
+							</p>
+						)}
+					</div>
+				))}
+				<div className="flex justify-center space-x-[32px]  mt-[48px] mb-[80px]  ">
+					<a
+						className="rounded-md hover:cursor-pointer bg-[#265205] text-[#ffffff] px-[16px] py-[12px] text-[16px] font-semibold"
+						href="tel:09034079339"
+					>
+						Book an Appointment
+					</a>
+				</div>
 			</div>
 		</div>
 	);

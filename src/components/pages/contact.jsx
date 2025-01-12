@@ -1,124 +1,67 @@
 import React from 'react';
-import FooterContact from '../footerContact';
-import location from '../../assets/icons/location-contact-icon.svg';
-import phone from '../../assets/icons/phone-contact-icon.svg';
-import mail from '../../assets/icons/mail-contact-icon.svg';
+import ContactUSForm from '../contactUsForm';
+import FindUs from '../findUs';
 
 export default function ContactUs() {
 	return (
-		<div>
-			<div className="font-outfit">
-				<div className=" bg-[#00050F]  bg-cover bg-bottom lg:mt-[155px] mt-[70px]  pb-[40px]">
-					<h6 className="text-center text-[#FF9500] font-medium text-[14px]  lg:pt-[120px] pt-[80px]  ">
-						Get in Touch with Bryana Resort & Apartment
-					</h6>
-					<p className="text-center font-light lg:px-[20%] px-[16px] pt-[8px] lg:text-[24px] text-[16px] leading-[36px]  text-[#ffffff] ">
-						We’d love to hear from you! Whether you have a question, want to
-						make a reservation, or need assistance, our team is here to help.
-						Contact us through any of the following methods
-					</p>
-					<div className="flex lg:flex-row flex-col-reverse gap-5 lg:mt-[120px] mt-[80px]">
-						<div className="lg:w-[33%] w-full flex flex-col justify-center  lg:pl-[120px] lg:px-[0px] px-[16px]">
-							<div>
-								<div className="flex gap-[16px] mt-[38px]">
-									<div>
-										<img
-											src={location}
-											alt=""
-										/>
-									</div>
-									<div className="">
-										<h1 className="text-[16px] text-[#FF9500]">Adddress</h1>
-										<div className="mt-[16px]">
-											<p className="text-[16px] text-white leading-[26px] font-light">
-												Plot 978, 979, Beside Magistrate Court,{' '}
-											</p>
-											<p className="text-[16px] text-white leading-[26px] font-light">
-												Kuchiyako, Kuje, FCT-Abuja.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className="flex gap-[16px] mt-[38px]">
-									<div>
-										<img
-											src={phone}
-											alt=""
-										/>
-									</div>
-									<div className="">
-										<h1 className="text-[16px] text-[#FF9500]">
-											Phone Numbers{' '}
-											<span className="font-light">
-												(Available on whatsApp)
-											</span>
-										</h1>
-										<div className="mt-[16px]">
-											<p className="text-[16px] text-white leading-[26px] font-light">
-												+234 803 747 2400
-											</p>
-											<p className="text-[16px] text-white leading-[26px] font-light">
-												+234 902 071 7574
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className="flex gap-[16px] mt-[38px]">
-									<div>
-										<img
-											src={mail}
-											alt=""
-										/>
-									</div>
-									<div className="">
-										<h1 className="text-[16px] text-[#FF9500]">Gmail</h1>
-										<div className="mt-[16px]">
-											<p className="text-[16px] text-white leading-[26px] font-light">
-												bryanaresort@gmail.com
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className="flex gap-[16px] mt-[38px]">
-									<div>
-										<img
-											src={mail}
-											alt=""
-										/>
-									</div>
-									<div className="">
-										<h1 className="text-[16px] text-[#FF9500]">Social Media</h1>
-										<div className="mt-[16px]">
-											<p className="text-[16px] text-white leading-[26px] font-light">
-												Follow us on Instagram & Twitter:
-											</p>
-											<p className="text-[16px] text-white leading-[26px] font-medium">
-												@bryanaresort_apartment
-											</p>
-										</div>
-									</div>
-								</div>
+		<>
+			<div className="bg-gradient-to-b from-[#265205] to-[#132B00] font-outfit flex justify-center items-center  lg:h-[486px] lg:mt-[90px] lg:pt-[0px] pt-[60px]  ">
+				<div className="flex flex-col  justify-end  lg:pt-[60px]  pt-[90px] lg:px-[8.3%] px-[24px]">
+					<section className="   flex flex-col  justify-center   items-center  h-full">
+						<div className="text-center">
+							<div className="">
+								<p className="text-[#E7B800] lg:text-[48px] text-[32px]   font-extrabold lg:pt-[40px]  ">
+									Let’s Talk
+								</p>
 							</div>
-						</div>
-						<div className="lg:w-[67%] w-full">
-							<div className="w-[100%] lg:h-[857px] h-[478px]  ">
-								<iframe
-									width="100%"
-									height="100%"
-									frameBorder="0"
-									scrolling="no"
-									marginHeight="0"
-									marginWidth="0"
-									src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3942.0757551296792!2d7.2503269999999995!3d8.87254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTInMjEuMSJOIDfCsDE1JzAxLjIiRQ!5e0!3m2!1sen!2sng!4v1732801266716!5m2!1sen!2sng&z=21"
-									allowFullScreen
-								></iframe>
-							</div>
-						</div>
-					</div>
-				</div>
+							<h1 className="lg:text-[20px] text-center text-[20px] pt-[8px] leading-[32px]  text-[#ffffff] ">
+								We’re always at your door step, contact us now let’s get your{' '}
+								<br />
+								environment free from pest and clean.
+							</h1>
 
-				<FooterContact />
+							<div className="flex justify-center space-x-[32px] lg:mt-[16px] mt-[24px] mb-[76px] ">
+								<a
+									className="rounded-md hover:cursor-pointer bg-[#ffffff] text-[#265205] px-[16px] py-[12px] text-[16px] font-semibold"
+									href="tel:09034079339"
+								>
+									Book an Appointment
+								</a>
+							</div>
+						</div>
+					</section>
+				</div>
 			</div>
-		</div>
+			<div className="flex  font-outfit lg:flex-row flex-col-reverse justify-between items-center lg:gap-0 gap-[48px] lg:px-[8.3%]  px-[24px] lg:pb-[80px] pb-[48px]">
+				<div className="lg:w-1/2 w-full">
+					<h1 className="lg:text-[32px] text-[24px] font-semibold text-[#292929] lg:mb-6 mb-4">
+						Work Hours
+					</h1>
+					<h2 className="lg:text-[24px] text-[20px] leading-[36px] text-[#292929] font-medium mb-1">
+						Monday - Friday
+					</h2>
+					<p className="lg:text-[24px] text-[20px] leading-[36px] text-[#292929] font-light lg:mb-6 mb-4">
+						08:00 AM to 06:00 PM{' '}
+					</p>
+					<h2 className="lg:text-[24px] text-[20px] leading-[36px] text-[#292929] font-medium mb-1">
+						Saturday - Sunday
+					</h2>
+					<p className="lg:text-[24px] text-[20px] leading-[36px] text-[#292929] font-light lg:mb-6 mb-4">
+						By appointment only
+					</p>
+					<h1 className="lg:text-[32px] text-[24px] font-semibold text-[#292929] lg:mb-6 mb-4">
+						Our Location
+					</h1>
+					<p className="lg:text-[24px] text-[20px] leading-[36px] text-[#292929] font-light">
+						B302 Zitel Plaza, Jabi, Abuja, Federal Capital Territory (FCT),
+						Abuja, Nigeria{' '}
+					</p>
+				</div>
+				<div className=" lg:-mt-14 -mt-10 font-sans bg-[#ffffff] flex justify-end rounded-lg lg:w-1/2 w-full ">
+					<ContactUSForm />
+				</div>
+			</div>
+			<FindUs />
+		</>
 	);
 }

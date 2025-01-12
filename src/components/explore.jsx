@@ -1,30 +1,40 @@
 import React from 'react';
-import getinTouch from '../assets/images/getinTouch.png';
-import { Link } from 'react-scroll';
-import mail from '../assets/icons/mail.svg';
-import phone from '../assets/icons/phone.svg';
-import location from '../assets/icons/location.svg';
-
-import facebook_logo from '../assets/icons/fb.svg';
-import linkedin_logo from '../assets/icons/link.svg';
-import instagram_logo from '../assets/icons/insta.svg';
-import line from '../assets/icons/line.jpg';
 import ExploreSlides from './slides/exploreslides';
 
 export default function Explore() {
 	return (
 		<>
-			<div className=" relative bg-[url('/src/assets/images/explore-image.png')] bg-cover lg:mt-[140px] mt-[40px] ">
-				<div className="absolute inset-0 bg-black/50"></div>
-
-				<div className="relative z-10">
-					<h6 className="text-center text-[#FF9500] lg:font-light font-medium lg:text-[20px] text-[16px] leading-[36px] lg:pt-[120px] pt-[40px]  ">
-						Check out our Rooms
+			<div className=" lg:mt-[140px] mt-[40px] lg:py-[120px] py-[80px] lg:px-[8.3%] px-[16px] bg-[#FFFCD0]">
+				<div className="">
+					<h6 className="text-center text-[#265205]  font-semibold lg:text-[20px] text-[24px] leading-[36px]  ">
+						Why Choose Us
 					</h6>
-					<p className="text-center font-semibold lg:text-[36px] text-[22px] text-[#ffffff] lg:px-[356px] px-[16px]">
-						Explore Our Elegant Apartments Where Luxury Meets Comfort
+					<p className="text-center font-semibold lg:text-[32px] text-[24px] text-[#292929] lg:px-[356px] px-[24px]">
+						Your Trusted Partner for Clean and Pest-Free Spaces
 					</p>
-					<ExploreSlides />
+				</div>
+				<div className="flex lg:flex-row flex-col gap-[48px] pt-[48px] items-stretch ">
+					<div className="lg:w-[55%] flex justify-center items-center   rounded-2xl">
+						<ExploreSlides />
+					</div>
+					<div className="flex flex-col justify-center ">
+						<p className="text-[24px] font-light leading-[36px]">
+							At Hamzville Solutions Limited, we are dedicated to transforming
+							your spaces into clean, safe, and pest-free zones. With years of
+							experience and a commitment to excellence, we cater to both
+							residential and commercial clients with tailored solutions to meet
+							every need.
+						</p>
+						<p className="text-[#1B1F26] text-[20px] leading-[30px] font-semibold pt-[32px]">
+							Professional Team
+						</p>
+						<p className="text-[#1B1F26] text-[20px] leading-[30px] font-semibold pt-[16px]">
+							Eco-Friendly Solutions
+						</p>
+						<p className="text-[#1B1F26] text-[20px] leading-[30px] font-semibold pt-[16px]">
+							Customer Satisfaction
+						</p>
+					</div>
 				</div>
 			</div>
 		</>

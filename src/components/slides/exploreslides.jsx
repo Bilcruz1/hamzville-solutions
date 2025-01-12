@@ -5,53 +5,22 @@ import 'swiper/css'; // Core Swiper styles
 import 'swiper/css/navigation'; // Navigation module styles
 
 // Your images here
-import img1 from '/slide.jpg';
-import img2 from '../../assets/slides/exploreslides/Slide1.jpg';
-import img3 from '../../assets/slides/exploreslides/Slide2.jpg';
-import img4 from '../../assets/slides/exploreslides/Slide3.jpg';
-import img5 from '../../assets/slides/exploreslides/Slide4.jpg';
-import img6 from '../../assets/slides/exploreslides/Slide5.jpg';
-import img7 from '../../assets/slides/exploreslides/Slide6.jpg';
-import img8 from '../../assets/slides/exploreslides/Slide7.jpg';
-import img9 from '../../assets/slides/exploreslides/Slide8.jpg';
-import img10 from '../../assets/slides/exploreslides/Slide9.jpg';
-import img11 from '../../assets/slides/exploreslides/Slide10.jpg';
-import img12 from '../../assets/slides/exploreslides/Slide11.jpg';
-import img13 from '../../assets/slides/exploreslides/Slide12.jpg';
-import img14 from '../../assets/slides/exploreslides/Slide13.jpg';
-import img15 from '../../assets/slides/exploreslides/Slide14.jpg';
-import img16 from '../../assets/slides/exploreslides/Slide15.jpg';
+import img1 from '../../assets/images/slide3.png';
+import img2 from '../../assets/images/slide3.png';
 
 import arrowNext from '../../assets/icons/arrowNext.svg';
 import arrowBack from '../../assets/icons/arrowBack.svg';
 
 export default function ExploreSlides() {
 	const [currentSlide, setCurrentSlide] = useState(1); // State to track the current slide index
-	const images = [
-		img1,
-		img2,
-		img3,
-		img4,
-		img5,
-		img6,
-		img7,
-		img8,
-		img9,
-		img10,
-		img11,
-		img12,
-		img13,
-		img14,
-		img15,
-		img16,
-	];
+	const images = [img1, img2];
 
 	const handleSlideChange = swiper => {
 		setCurrentSlide(swiper.realIndex + 1); // Update the current slide number (0-indexed so we add 1)
 	};
 
 	return (
-		<div className="relative w-full lg:px-[120px] px-[16px] pt-[48px] lg:pb-[116px] pb-[48px]">
+		<div className="relative w-full ">
 			{/* Display the current slide and total slide count */}
 			{/* <p>Luxury Apartments</p>
 			<div></div>
@@ -78,7 +47,7 @@ export default function ExploreSlides() {
 							<img
 								src={image}
 								alt={`Slide ${index + 1}`}
-								className="w-full lg:h-[800px] h-[393px] object-cover rounded-2xl"
+								className="w-full h-full object-contain rounded-2xl"
 							/>
 							{/* Custom navigation buttons */}
 							<div className="absolute top-1/2 left-0 transform -translate-y-1/2 z-10 p-2">

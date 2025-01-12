@@ -5,6 +5,7 @@ import Explore from '../explore.jsx';
 import Amenities from '../amenities.jsx';
 import FindUs from '../findUs.jsx';
 import Footer from '../footer.jsx';
+import Certifications from '../certifications.jsx';
 
 const Home = () => {
 	return (
@@ -14,8 +15,8 @@ const Home = () => {
 				<SectionTwo />
 				<Amenities />
 				<Explore />
+				<Certifications />
 				<FindUs />
-				<Footer />
 			</div>
 		</>
 	);

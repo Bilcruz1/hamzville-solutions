@@ -38,7 +38,7 @@ function AppContent() {
 					element={<Home />}
 				/>
 				<Route
-					path="/facilities"
+					path="/services"
 					element={<Facilities />}
 				/>
 				<Route
