@@ -6,7 +6,7 @@ export default function HeroSection() {
 	return (
 		<>
 			<div
-				className="bg-[url('/src/assets/images/Hamzville-hero-section.png')] lg:h-[calc(100vh-90px)] bg-cover lg:mt-[90px]  bg-[#9da39f]  h-screen lg:bg-cover bg-top flex justify-center lg:px-[80.%]  lg:pt-[0px] pt-[60px]  "
+				className="bg-[url('/src/assets/images/Hamzville-hero-section.png')] lg:h-[calc(100vh-90px)] bg-cover lg:mt-[90px]  bg-[#9da39f]  h-screen lg:bg-cover bg-top flex justify-center lg:px-[8.3%] px-[24px]  lg:pt-[0px] pt-[60px]  "
 				id="home"
 			>
 				<div className="flex flex-col  justify-end  lg:pt-[60px]  pt-[60px]">
