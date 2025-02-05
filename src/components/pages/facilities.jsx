@@ -8,7 +8,7 @@ import CleaningServices from '../cleaningServices';
 export default function Facilities() {
 	return (
 		<div className="font-outfit">
-			<div className="bg-gradient-to-b from-[#265205] to-[#132B00] flex justify-center items-center  lg:h-[486px] lg:mt-[90px] lg:pt-[0px] pt-[60px]  ">
+			<div className=" bg-[url('/src/assets/images/servicePage.png')] flex justify-center items-center  lg:h-[486px] lg:mt-[90px] lg:pt-[0px] pt-[60px]  ">
 				<div className="flex flex-col  justify-end  lg:pt-[60px]  pt-[90px] lg:px-0 px-[24px]">
 					<section className="   flex flex-col  justify-center   items-center  h-full">
 						<div className="text-center">

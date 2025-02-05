@@ -62,10 +62,10 @@ export default function ContactUSForm() {
 		setIsSubmitting(true); // Show loading state
 		emailjs
 			.send(
-				'service_f23sumb', // Replace with your EmailJS Service ID
-				'template_u5jbji5', // Replace with your EmailJS Template ID
+				'service_lx14unm', // Replace with your EmailJS Service ID
+				'template_hcynxsg', // Replace with your EmailJS Template ID
 				{ message }, // Pass the message as a parameter
-				'6P08c4cfZIY6JzUS5' // Replace with your EmailJS Public Key
+				'ZmQm5NaJJDmhaSQbo' // Replace with your EmailJS Public Key
 			)
 			.then(
 				response => {

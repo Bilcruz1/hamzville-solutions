@@ -24,32 +24,32 @@ export default function FindUs() {
 
 				<div className="flex lg:flex-row flex-col lg:border-t-[1px] lg:border-gray-400 lg:px-[8.3%] px-[24px] pt-[48px] ">
 					<div className="lg:w-1/2 w-full">
-						<p className="text-[24px] font-semibold text-[#265205]">
+						<p className="text-[16px] font-semibold text-[#265205]">
 							Locate us
 						</p>
-						<p className="text-[24px] font-light leading-[36px] text-[#00050F] pt-[16px]">
+						<p className="text-[16px] font-light leading-[36px] text-[#00050F] ">
 							B302 Zitel Plaza, Jabi, Abuja, Federal Capital Territory, Abuja,
 							Nigeria{' '}
 						</p>
 					</div>
-					<div className="lg:w-1/2 w-full  lg:ml-[90px] lg:pt-0 pt-[16px] ">
-						<p className="text-[24px] font-semibold leading-[36px] text-[#265205] pt-[16px]">
+					<div className="lg:w-1/2 w-full  lg:ml-[90px] lg:pt-0 pt-[8px] ">
+						<p className="text-[16px] font-semibold leading-[36px] text-[#265205] ">
 							Email us:{' '}
-							<span className="text-[24px] font-light leading-[36px] text-[#00050F]">
+							<span className="text-[16px] font-light leading-[36px] text-[#00050F]">
 								{' '}
 								hamzvillesolutions@gmail.com
 							</span>
 						</p>
-						<p className="text-[24px] font-semibold leading-[36px] text-[#265205] pt-[16px]">
+						<p className="text-[16px] font-semibold leading-[36px] text-[#265205]">
 							Call or WhatsApp:
-							<span className="text-[24px] font-light leading-[36px] text-[#00050F]">
+							<span className="text-[16px] font-light leading-[36px] text-[#00050F]">
 								{' '}
 								+234 903 407 9339
 							</span>
 						</p>
-						<p className="text-[24px] font-semibold leading-[36px] text-[#265205] pt-[16px]">
+						<p className="text-[16px] font-semibold leading-[36px] text-[#265205] ">
 							Instagram, Twitter & Facebook:
-							<span className="text-[24px] font-light leading-[36px] text-[#00050F]">
+							<span className="text-[16px] font-light leading-[36px] text-[#00050F]">
 								{' '}
 								@hamzvillesolutinsltd
 							</span>

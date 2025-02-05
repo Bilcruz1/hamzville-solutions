@@ -6,20 +6,37 @@ import ecn from '../assets/icons/ecn.svg';
 import starters from '../assets/icons/starters.svg';
 import pula from '../assets/icons/pula.svg';
 import dantata from '../assets/icons/dantata.svg';
+import cbm from '../assets/icons/cbm.svg';
+import fushia from '../assets/icons/fushia.svg';
+import jabtech from '../assets/icons/jabtech.svg';
+import ciibex from '../assets/icons/ciibex.svg';
+import golf from '../assets/icons/golf.svg';
 
 export default function Certifications() {
+	const logos = [
+		ecn,
+		starters,
+		pula,
+		dantata,
+		cbm,
+		fushia,
+		jabtech,
+		ciibex,
+		golf,
+	];
+
 	return (
 		<>
-			<div className="lg:px-[8.3%] px-[16px] py-[80px]  ">
+			<div className="lg:px-[8.3%] px-[16px] py-[80px]">
 				<div>
-					<h6 className="text-center bg-[#FFFEFA] text-[#265205] font-semibold lg:text-[24px] text-[16px] leading-[36px]  ">
+					<h6 className="text-center bg-[#FFFEFA] text-[#265205] font-semibold lg:text-[24px] text-[16px] leading-[36px]">
 						Our Certification
 					</h6>
 					<p className="text-center font-semibold lg:text-[36px] text-[32px] text-[#292929] lg:px-[459px] px-[24px]">
 						We are Licensed
 					</p>
 				</div>
-				<div className="flex lg:gap-[48px]  lg:justify-center lg:pt-[48px] pt-[24px]">
+				<div className="flex lg:gap-[48px] lg:justify-center lg:pt-[48px] pt-[24px]">
 					<div>
 						<img
 							src={ehcon}
@@ -27,7 +44,6 @@ export default function Certifications() {
 							className="lg:scale-100 scale-75"
 						/>
 					</div>
-
 					<div>
 						<img
 							src={pcan}
@@ -56,42 +72,29 @@ export default function Certifications() {
 				</a>
 			</div>
 
-			<div className="lg:px-[8.3%] px-[16px] lg:py-[80px] py-[40px] ">
-				<div>
-					<p className="text-center font-semibold lg:text-[36px] text-[24px] text-[#292929] lg:px-[459px] px-[24px]">
-						Our satisfied Clients
-					</p>
-				</div>
-				<div className="flex lg:gap-[48px] gap-[16px]  lg:justify-center lg:pt-[48px] pt-[16px]">
-					<div>
-						<img
-							src={ecn}
-							alt="ecn"
-							className="lg:scale-100 scale-90"
-						/>
-					</div>
+			{/* Scrolling Marquee Section */}
+			<div>
+				<p className="text-center font-semibold lg:text-[36px] text-[24px] text-[#292929] lg:px-[459px] lg:py-[80px] py-[40px] px-[24px]">
+					Our satisfied Clients
+				</p>
+			</div>
 
-					<div>
-						<img
-							src={starters}
-							alt="starters"
-							className="lg:scale-100 scale-90"
-						/>
-					</div>
-					<div>
-						<img
-							src={pula}
-							alt="pula"
-							className="lg:scale-100 scale-90"
-						/>
-					</div>
-					<div>
-						<img
-							src={dantata}
-							alt="dantata"
-							className="lg:scale-100 scale-90"
-						/>
-					</div>
+			<div className="w-full overflow-hidden relative lg:pb-[120px]">
+				{/* Outer Wrapper for Infinite Loop */}
+				<div className="flex whitespace-nowrap animate-marquee lg:animate-marqueeMobile">
+					{/* Duplicate Images for Seamless Transition */}
+					{[...logos, ...logos].map((logo, index) => (
+						<div
+							key={index}
+							className="flex-shrink-0 mx-4"
+						>
+							<img
+								src={logo}
+								alt={`logo-${index}`}
+								className="h-12 lg:h-[120px] w-auto"
+							/>
+						</div>
+					))}
 				</div>
 			</div>
 		</>

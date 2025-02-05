@@ -6,6 +6,7 @@ import Amenities from '../amenities.jsx';
 import FindUs from '../findUs.jsx';
 import Footer from '../footer.jsx';
 import Certifications from '../certifications.jsx';
+import Solutions from '../solutions.jsx';
 
 const Home = () => {
 	return (
@@ -14,6 +15,7 @@ const Home = () => {
 				<HeroSection />
 				<SectionTwo />
 				<Amenities />
+				<Solutions />
 				<Explore />
 				<Certifications />
 				<FindUs />
