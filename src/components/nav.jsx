@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import logo from '../assets/images/hamzville-logo.svg';
 import menuopen from '../assets/icons/menu-open-icon.svg';
 import { Link as RouterLink, useNavigate, useLocation } from 'react-router-dom'; // For routing
@@ -10,6 +9,8 @@ import instagram from '../assets/icons/hamzville-instagram.svg';
 import twitter from '../assets/icons/hamzville-twitter.svg';
 import facebook from '../assets/icons/hamzville-facebook.svg';
 
+import Hamburger from './hamburger.jsx';
+import WhatsAppButton from './whatsapp.jsx';
 import WhatsAppButtonNav from './whatsapp2.jsx';
 
 export default function Nav() {
