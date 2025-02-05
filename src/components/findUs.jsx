@@ -51,7 +51,7 @@ export default function FindUs() {
 							Instagram, Twitter & Facebook:
 							<span className="text-[16px] font-light leading-[36px] text-[#00050F]">
 								{' '}
-								@hamzvillesolutinsltd
+								@hamzvillesolutionsltd
 							</span>
 						</p>
 					</div>

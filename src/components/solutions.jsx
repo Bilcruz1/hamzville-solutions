@@ -16,7 +16,7 @@ export default function Solutions() {
 				pest-free environment for you.{' '}
 			</p>
 
-			<div className="flex justify-center gap-5 pt-[48px] lg:px-[120px] px-[16px]">
+			<div className="grid grid-cols-2 lg:grid-cols-5  justify-center gap-7 pt-[48px] lg:px-[120px] px-[16px]">
 				<div className="flex flex-col justify-center items-center">
 					<img
 						src={rodents}
@@ -53,7 +53,7 @@ export default function Solutions() {
 						Ants
 					</p>
 				</div>
-				<div className="flex flex-col justify-center items-center">
+				<div className="flex flex-col lg:col-span-1 col-span-2 justify-center items-center">
 					<img
 						src={spiders}
 						alt=""

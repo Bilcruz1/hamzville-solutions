@@ -1,10 +1,10 @@
 import React from 'react';
 
 const YouTubeThumbnail = ({ videoId }) => {
-	const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`;
+	const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`;
 
 	return (
-		<div className="relative w-full lg:h-[80vh] h-[50vh] overflow-hidden rounded-2xl ">
+		<div className="relative w-full lg:h-[80vh] h-[50vh] overflow-hidden rounded-2xl">
 			<iframe
 				src={embedUrl}
 				title="YouTube video player"
