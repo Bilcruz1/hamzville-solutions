@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Amenities() {
-	// Array to store data for each amenity
 	const amenities = [
 		{
 			title: 'Residential Cleaning',
@@ -50,13 +49,16 @@ export default function Amenities() {
 		},
 	];
 
-	// State to manage the active index for mobile view
 	const [activeIndex, setActiveIndex] = useState(0);
 
-	// Function to toggle active index on mobile
-	const handleToggle = index => {
-		setActiveIndex(prevIndex => (prevIndex === index ? -1 : index));
-	};
+	// Auto-switch active index every 10 seconds
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setActiveIndex(prevIndex => (prevIndex + 1) % amenities.length);
+		}, 8000); // 10 seconds
+
+		return () => clearInterval(interval); // Cleanup on unmount
+	}, []);
 
 	return (
 		<div>
@@ -83,7 +85,7 @@ export default function Amenities() {
 					</div>
 				))}
 			</div>
-			<div className="lg:flex hidden justify-center  space-x-[32px]  mt-[48px] mb-[80px]  ">
+			<div className="lg:flex hidden justify-center space-x-[32px] mt-[48px] mb-[80px]">
 				<a
 					className="rounded-md hover:cursor-pointer bg-[#265205] text-[#ffffff] px-[16px] py-[12px] text-[16px] font-semibold"
 					href="tel:09034079339"
@@ -101,20 +103,18 @@ export default function Amenities() {
 							activeIndex === index
 								? 'border-[#265205] bg-[#FFFCD0]'
 								: 'border-[#f0f0f0]'
-						} px-[24px] py-[8px] `}
+						} px-[24px] py-[8px]`}
 					>
-						{/* Title with toggle functionality */}
 						<h1
-							className={` text-[#1B1F26] cursor-pointer ${
+							className={`text-[#1B1F26] cursor-pointer ${
 								activeIndex === index
-									? ' text-[24px]  text-[#1B1F26] leading-[30px] font-semibold cursor-pointer border-[#265205] bg-[#FFFCD0]'
-									: ' text-[14px]  text-[#1B1F26] leading-[22px]  cursor-pointer border-[#f0f0f0]'
-							}  `}
-							onClick={() => handleToggle(index)}
+									? 'text-[24px] font-semibold bg-[#FFFCD0]'
+									: 'text-[14px]'
+							}`}
+							onClick={() => setActiveIndex(index)}
 						>
 							{amenity.title}
 						</h1>
-						{/* Description only for active item */}
 						{activeIndex === index && (
 							<p className="text-[#292929] text-[16px] pt-[16px] leading-[26px] font-light">
 								{amenity.description}
@@ -122,7 +122,7 @@ export default function Amenities() {
 						)}
 					</div>
 				))}
-				<div className="flex justify-center space-x-[32px]  mt-[48px] mb-[80px]  ">
+				<div className="flex justify-center space-x-[32px] mt-[48px] mb-[80px]">
 					<a
 						className="rounded-md hover:cursor-pointer bg-[#265205] text-[#ffffff] px-[16px] py-[12px] text-[16px] font-semibold"
 						href="tel:09034079339"
