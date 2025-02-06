@@ -3,49 +3,49 @@ import React, { useState, useEffect } from 'react';
 export default function Amenities() {
 	const amenities = [
 		{
-			title: 'Residential Cleaning',
+			title: 'Pest Control',
 			description:
-				'Our Residential Cleaning service delivers a spotless and refreshed home using eco-friendly products. Enjoy a healthier, more comfortable living space with our professional care.',
+				'Our Pest Control services effectively eliminate rodents, insects, and other pests, ensuring a safe and hygienic environment. We use eco-friendly solutions for long-lasting protection.',
 		},
 		{
-			title: 'Office Cleaning',
+			title: 'Deep Cleaning',
 			description:
-				'Our Office Cleaning service ensures a clean, hygienic, and productive workspace. We focus on every detail to create a professional and welcoming environment.',
+				'Our Deep Cleaning service reaches every corner, removing dirt, germs, and allergens for a healthier space. We ensure a thorough, long-lasting clean for homes and businesses.',
 		},
 		{
-			title: 'Post-Construction Cleaning',
+			title: 'Commercial & Industrial Cleaning',
 			description:
-				'Our Post-Construction Cleaning service clears dust, debris, and residues, leaving your space spotless and move-in ready. We handle the mess so you can enjoy the results.',
+				'Our Commercial & Industrial Cleaning services ensure a spotless, safe, and hygienic workspace. We handle large-scale cleaning needs with efficiency and professionalism.',
 		},
 		{
-			title: 'Rodent Control',
+			title: 'Post Construction Cleaning',
 			description:
-				'Our Rodent Control service effectively eliminates rats, mice, and more, protecting your property from damage and contamination. We use safe, efficient methods to keep your space rodent-free.',
-		},
-		{
-			title: 'Termite Solutions',
-			description:
-				'Our Termite Solutions safeguard your property by eliminating termites and preventing future infestations. Protect your structures with our reliable and eco-friendly treatments.',
+				'Our Post-Construction Cleaning removes dust, debris, and residues, leaving your space spotless and ready to use. We ensure a thorough and hassle-free cleanup after any project.',
 		},
 		{
 			title: 'General Pest Management',
 			description:
-				'Our General Pest Management service tackles common pests like cockroaches, ants, spiders, and more. We ensure a safe, pest-free environment with effective and eco-friendly solutions.',
+				'Our General Pest Management service eliminates common pests like cockroaches, ants, and spiders. We use safe and effective treatments to keep your space pest-free.',
 		},
 		{
-			title: 'Solar Panel Installation',
+			title: 'Facility Management',
 			description:
-				'Harness the power of the sun with our high-quality solar energy systems. We design and install solutions tailored to your energy needs, reducing your reliance on traditional power sources and lowering utility bills.',
+				'Our Facility Management services ensure smooth operations, maintenance, and safety for residential and commercial properties. We provide reliable solutions to keep your spaces efficient and well-maintained.',
 		},
 		{
-			title: 'Energy Audits and Optimization',
+			title: 'Clean Energy Business',
 			description:
-				'Identify areas of energy waste with our comprehensive audits. Our team provides actionable recommendations to improve efficiency, helping you save money while minimizing environmental impact.',
+				'We provide sustainable clean energy solutions, including solar installations and energy efficiency upgrades. Power your home or business with eco-friendly and cost-effective energy.',
 		},
 		{
-			title: 'Energy-Efficient Systems Upgrade',
+			title: 'Home Automation',
 			description:
-				'Transition to sustainable living with energy-efficient lighting, appliances, and HVAC systems. Our upgrades not only reduce energy consumption but also enhance the performance and longevity of your systems.',
+				'Our Home Automation services bring convenience and security to your space with smart lighting, climate control, and surveillance systems. Experience seamless control and energy efficiency at your fingertips.',
+		},
+		{
+			title: 'General Contract',
+			description:
+				'Our General Contract services cover construction, renovations, and maintenance with quality craftsmanship and efficiency. We deliver reliable solutions tailored to your project needs.',
 		},
 	];
 

@@ -5,6 +5,7 @@ import 'swiper/css'; // Core Swiper styles
 import 'swiper/css/navigation'; // Navigation module styles
 
 // Your images here
+import img0 from '../../assets/images/slide0.png';
 import img1 from '../../assets/images/slide3.png';
 import img2 from '../../assets/images/slide4.png';
 import img3 from '../../assets/images/slide5.png';
@@ -16,7 +17,7 @@ import arrowBack from '../../assets/icons/arrowBack.svg';
 
 export default function ExploreSlides() {
 	const [currentSlide, setCurrentSlide] = useState(1); // State to track the current slide index
-	const images = [img1, img2, img3, img4, img5];
+	const images = [img0, img1, img2, img3, img4, img5];
 
 	const handleSlideChange = swiper => {
 		setCurrentSlide(swiper.realIndex + 1); // Update the current slide number (0-indexed so we add 1)
