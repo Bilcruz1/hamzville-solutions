@@ -105,7 +105,11 @@ export default function Amenities() {
 					>
 						{/* Title with toggle functionality */}
 						<h1
-							className="text-[14px]  text-[#1B1F26] leading-[22px] font-semibold cursor-pointer"
+							className={` text-[#1B1F26] cursor-pointer ${
+								activeIndex === index
+									? ' text-[24px]  text-[#1B1F26] leading-[30px] font-semibold cursor-pointer border-[#265205] bg-[#FFFCD0]'
+									: ' text-[14px]  text-[#1B1F26] leading-[22px]  cursor-pointer border-[#f0f0f0]'
+							}  `}
 							onClick={() => handleToggle(index)}
 						>
 							{amenity.title}
