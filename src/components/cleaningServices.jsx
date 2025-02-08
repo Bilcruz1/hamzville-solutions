@@ -8,6 +8,33 @@ import checked from '../assets/icons/checked-icon.svg'; // Checked icon
 export default function CleaningServices() {
 	const services = [
 		{
+			title: 'Pest Control Services',
+			description:
+				'Our pest control solutions are designed to eliminate unwanted Pests effectively while safeguarding your health.',
+			items: [
+				{
+					title: 'Rodent Pest Control',
+					description: 'We eliminates rats and mice, ensuring a safe and pest-free environment.',
+				},
+				{
+					title: 'Commercial Pest Control',
+					description: 'We keeps businesses pest-free with safe, effective, and long-lasting solutions.',
+				},
+				{
+					title: 'Industrial Pest Control',
+					description:
+						'We ensures large facilities remain pest-free with effective and safe treatments.',
+				},
+				{
+					title: 'Special Pest Control',
+					description:
+						'We targets stubborn and unique infestations with customized, effective solutions.',
+				},
+			],
+			image: pcsImage, // Replace with the actual pest control image
+		},
+
+		{
 			title: 'Deep Cleaning Services',
 			description:
 				'We offer comprehensive deep cleaning to ensure every nook and cranny of your space is spotless.',
@@ -27,27 +54,7 @@ export default function CleaningServices() {
 			],
 			image: dcsImage,
 		},
-		{
-			title: 'Pest Control Services',
-			description:
-				'Our pest control solutions are designed to eliminate unwanted guests effectively while safeguarding your health.',
-			items: [
-				{
-					title: 'Rodent Control',
-					description: 'Prevent property damage and maintain hygiene.',
-				},
-				{
-					title: 'Termite Management',
-					description: 'Protect your structure from costly infestations.',
-				},
-				{
-					title: 'General Pest Management',
-					description:
-						'Comprehensive solutions for cockroaches, ants, and more.',
-				},
-			],
-			image: pcsImage, // Replace with the actual pest control image
-		},
+		
 		{
 			title: 'Renewable and Clean Energy',
 			description:
