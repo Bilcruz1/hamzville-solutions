@@ -162,8 +162,7 @@ function Hamburger({ setIsOpen }) {
 									/>
 								</a>
 								<p className="text-left text-[14px] font-light leading-[24px] ">
-									Plot 978, 979, Beside Magistrate Court, Kuchiyako, Kuje,
-									FCT-Abuja.
+									B302 Zitel Plaza, Jabi, Federal Capital Territory, FCT Abja.
 								</p>
 							</div>
 							<div className="flex gap-[16px] items-center">
@@ -178,8 +177,7 @@ function Hamburger({ setIsOpen }) {
 									/>
 								</a>
 								<div className="text-left  text-[14px] font-light leading-[24px]  ">
-									<p>+234 803 747 2400</p>
-									<p>+234 902 071 7574</p>
+									<p>+234 903 407 9339</p>
 								</div>
 							</div>
 
@@ -195,7 +193,7 @@ function Hamburger({ setIsOpen }) {
 									/>
 								</a>
 								<p className="text-left  text-[14px] font-light leading-[24px] ">
-									bryanaresort@gmail.com
+									hamzvillesolutions@gmail.com
 								</p>
 							</div>
 						</div>
@@ -213,7 +211,7 @@ function Hamburger({ setIsOpen }) {
 								</a>
 							</div>
 							<div className="flex items-center">
-								<a href="#">
+								<a href="https://www.instagram.com/hamzvillesolutinsltd?igsh=MXRyeW15NnF5Mm43Ng==">
 									<img
 										src={instagram}
 										alt="mail-icon-header"
