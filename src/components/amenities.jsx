@@ -126,7 +126,7 @@ export default function Amenities() {
 				<div className="flex justify-center space-x-[32px] mt-[48px] mb-[80px]">
 					<a
 						className="rounded-md hover:cursor-pointer bg-[#265205] text-[#ffffff] px-[16px] py-[12px] text-[16px] font-semibold"
-						href="tel:09034079339"
+						href="https://wa.me/+2349034079339"
 					>
 						Book an Appointment
 					</a>

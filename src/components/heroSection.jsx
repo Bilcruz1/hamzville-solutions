@@ -26,7 +26,7 @@ export default function HeroSection() {
 							<div className="flex justify-center space-x-[32px] lg:mt-[16px] mt-[24px] mb-[76px] ">
 								<a
 									className="rounded-md hover:cursor-pointer bg-[#ffffff] text-[#265205] px-[16px] py-[12px] text-[16px] font-semibold"
-									href="tel:09034079339"
+									href="https://wa.me/+2349034079339"
 								>
 									Book an Appointment
 								</a>
